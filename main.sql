@@ -33,7 +33,7 @@ INSERT INTO companies VALUES
 ('iHerb', 'Irvine CA', 'Convert and update Cad files', 'iHerb.com'),
 ('Viasat', 'Carlsbad CA', 'Deliver connections with the capacity to change the world', '1844 702 3199');
 
-.print 'COMPANIES'
+.print 'Companies'
 SELECT * FROM companies;
 
 INSERT INTO internships VALUES
@@ -50,17 +50,20 @@ INSERT INTO internships VALUES
 
 .print '-----------------'
 .print
-.print 'INTERNSHIPS'
+.print 'Internships'
+.print
 SELECT * FROM internships;
 .print '-----------------'
 .print
-.print 'INTERNSHIPS BY DEADLINE'
+.print 'Internships By Deadline'
+.print
 SELECT * FROM internships
 ORDER BY deadline;
 
 .print '-----------------'
 .print
-.print 'Viasat INTERNSHIPS'
+.print 'Viasat Internship'
+.print
 SELECT * FROM internships
 WHERE company_name='viasat';
 
@@ -68,5 +71,6 @@ WHERE company_name='viasat';
 .print '-----------------'
 .print
 .print 'Internships By Amount of Days'
+.print
 SELECT company_name, position, duration FROM internships
 ORDER BY duration DESC;
