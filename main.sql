@@ -48,24 +48,24 @@ INSERT INTO internships VALUES
 ('Mechanical Engineering Intern', 'iHerb', '1', 'NA','Perform Prototyping', '25-120k'),
 ('Software Engineer', 'viasat', '1', '10', 'System infastrucute development', '29-57k');
 
-.print '------------------------------------------------'
+.print '-----------------'
 .print
 .print 'INTERNSHIPS'
 SELECT * FROM internships;
-.print '------------------------------------------------'
+.print '-----------------'
 .print
 .print 'INTERNSHIPS BY DEADLINE'
 SELECT * FROM internships
 ORDER BY deadline;
 
-.print '------------------------------------------------'
+.print '-----------------'
 .print
 .print 'Viasat INTERNSHIPS'
 SELECT * FROM internships
 WHERE company_name='viasat';
 
 
-.print '------------------------------------------------'
+.print '-----------------'
 .print
 .print 'Internships By Amount of Days'
 SELECT company_name, position, duration FROM internships
